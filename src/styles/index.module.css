@@ -1,0 +1,29 @@
+.aboutContainer{
+   background-color: rgba(191, 191, 191, 0.13);
+}
+.advantagesContainer{
+   background-color: rgba(196, 244, 215, 1);
+}
+.comment{
+   background:url(../assets/Desktop\ -\ 4.png);
+   background-repeat:no-repeat;
+   background-size:cover; 
+   background-position:center;
+}
+.commentOverlay{
+   background-color: rgba(255, 255, 255, 0.966);
+}
+
+@media screen and (min-width:1400px) {
+    /* .img{
+       height: 45%;
+    }
+    .vector{
+        height: 50%;
+        bottom: 30%;
+     } */
+     .aboutVadoc{
+        height: 32%;
+     }
+
+}

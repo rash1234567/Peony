@@ -6,10 +6,9 @@
     margin: 0;
     padding: 0;
 }
-
-.loginDiv{
-    background-image: url('./Images/firstBg.png');
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
+#desc{
+    background: url(./assets/focused-workaholic-african-american-businesswoman-working-company-financial-charts-presentation\ 1.png);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position:center;
 }

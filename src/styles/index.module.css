@@ -27,3 +27,28 @@
      }
 
 }
+
+@media screen and (orientation:landscape) and (max-width: 900px) {
+   .features{
+      height:auto;
+   }
+   .aboutContainer{
+      height: 600px;
+   }
+   .aboutimg{
+      height:70%;
+      width: 70%;
+      margin: auto;
+      display: flex;
+   }
+   .vector{
+      width: 60%;
+   }
+   .img{
+      width: 60%;
+      right: 20%;
+   }
+   .comment, .commentOverlay{
+      height: 300px
+   }
+} 

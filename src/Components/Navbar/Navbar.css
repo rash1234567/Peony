@@ -54,7 +54,7 @@
 
 
 
-@media screen and (max-width:767px){
+@media screen and (max-width:700px){
   .nav {
     background-color: black;
     width: 50%;
@@ -128,4 +128,30 @@
   .nav-menu{
     height: 100vh;
   }
+}
+
+@media screen and (orientation:landscape) and (max-width: 900px){
+  .fa-bars{
+    display: none;
+  }
+  .logo{
+    width: 15%;
+  }
+  .nav{
+    padding-top: 1rem/* 8px */;
+    padding-bottom: 1rem/* 8px */;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navItemsDiv{
+    width: 60%;
+    font-size: 13px;
+  }
+
+  .joinUsBtn{
+    height: 30px;
+    width: 75px;
+    font-size: 13px;
+  }
+ 
 }

@@ -77,7 +77,7 @@ function Index() {
     <div  >
         <Heroe/>
         {/* features */}
-        <div className='xl:h-[110vh] lg:h-[60vh] md:h-[75vh] h-auto flex mb-[5%] md:mb-[3%] xl:mb-[5%] 3xl:mb-[10%]'>
+        <div className={`xl:h-[110vh] lg:h-[60vh] md:h-[75vh]  h-auto flex mb-[5%] md:mb-[3%] xl:mb-[5%] 3xl:mb-[10%] ${indexStyles.features}`}>
             <div className='h-[80%] w-[85%] mx-auto mt-[7%] flex flex-col justify-around'>
                 <div className='w-full'>
                     <h2 className='font-openSans text-[24px]  md:text-[36px] 3xl:text-[56px] 4xl:text-[74px] 5xl:text-[80px] leading-[49px] w-full md:py-[1%] font-[800] after:w-full underline underline-offset-[40%] decoration-[#04E761]'>Features Of Vatdoc</h2>
@@ -94,14 +94,12 @@ function Index() {
         
         {/* about */}
         <div className={`${indexStyles.aboutContainer} flex flex-col lg:flex-row h-[80vh] lg:h-[50vh]  xl:h-[100vh]  4xl:h-[80vh] justify-between md:pr-2 lg:pr-0`}>
-            <div className='w-full lg:w-[60%] h-full flex items-center '>
-                <div className='  w-[95%] h-[75%] relative'>
+            <div className={`w-full lg:w-[60%] h-full flex items-center`}>
+                <div className={`w-[95%] h-[75%] relative ${indexStyles.aboutimg}`}>
                     <img src={vector} className= {`${indexStyles.vector} w-[100%] h-full `} />
                     <img src={hand} className={`${indexStyles.img} absolute bottom-0 right-0 w-[83%] border-[3px] border-[#04E761] rounded-xl h-[85%]`}/>  
                 </div>  
             </div>
-
-
             <div className='xl:w-[39%] lg:w-[45%] lg:h-full xl:h-full flex items-center mb-[8%] lg:mb-0 lg:py-[3%] xl:py-0  '>
                 <div className={`${indexStyles.aboutVadoc}  lg:h-[50%] xl:w-[30.5vw] xl:h-[45%] flex flex-col justify-between lg:pr-4 xl:pr-0 px-[20%] lg:px-0 `}>
                     <h2 className=' md:text-start font-openSans text-[24px] md:text-[36px] leading-[49px] md:leading-[55px] 3xl:text-[42px] 4xl:text-[48px] 3xl:leading-[55px] 4xl:leading-[60px]  font-[800] underline underline-offset-[30%] decoration-[#04E761] decoration-[2px] '>About Vatdoc</h2>
@@ -155,7 +153,7 @@ function Index() {
                 <h3 className='text-[20px] font-[700] font-OpenSans leading-[30px]'>Blog</h3>
                 <h2 className='text-[28px] md:text-[36px] font-[700] font-OpenSans leading-[50px]'>Get to know <span className='text-[#1FBE54]'>our news</span> </h2>
             </div>
-            <div className='flex flex-col md:flex-row justify-around mx-auto px-[5%] mt-[5%] mb-[5%]'>
+            <div className='flex flex-col md:flex-row justify-around mx-auto px-[5%] mt-[5%] mb-[5%] landscape:flex-row'>
                 {
                     blogs.map(blog=>{
                         return <BlogCard {...blog}/>
@@ -165,9 +163,9 @@ function Index() {
         </div>
 
         {/* Patner */}
-        <div className='bg-[#C4F4D7] h-[20vh] xl:h-[30vh] relative flex items-center justify-center '>
-            <div className='h-[50%] w-[95%] md:w-[70%] xl:w-[40%] 2xl:w-[50%]  flex flex-col lg:flex-row items-center justify-around'>
-                 <h1 className='text-[#142C14] w-[70%] text-[16px] md:text-[24px] font-openSans font-semibold 2xl:text-[30px] 3xl:text-[40px] 4xl:text-[50px]'>Want to become our partner?</h1>
+        <div className='bg-[#C4F4D7] h-[20vh] xl:h-[30vh] relative flex items-center justify-center landscape:h-[150px] '>
+            <div className='h-[50%] w-[95%] md:w-[70%] xl:w-[40%] 2xl:w-[50%]  flex flex-col lg:flex-row items-center justify-around  landscape:flex-row landscape:justify-around landscape:w-[60%] lg:landscape:w-[50%] '>
+                 <h1 className='text-[#142C14] w-[70%] text-[16px] md:text-[24px] font-openSans font-semibold 2xl:text-[30px] 3xl:text-[40px] 4xl:text-[50px] landscape:text-[20px] lg:landscape:text-[30px]'>Want to become our partner?</h1>
                  <button className='bg-[#04E761] w-[25%] text-white py-[2%] text-[14px] md:text-[16px] 2xl:text-[20px] font-openSans rounded-[5px] 3xl:text-[24px] 4xl:text-[28px]'>Contact Us</button>
             </div>
             <img src={conEllipse}  className='absolute top-0 -z-10 left-[10%]'/>

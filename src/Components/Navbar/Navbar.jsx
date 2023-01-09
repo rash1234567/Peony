@@ -11,11 +11,11 @@ function Navbar() {
   }
 
   return (
-    <div className='bg-black z-[200] md:fixed top-0 left-0 right-0'>
+    <div className='bg-black z-[200] md:fixed top-0 left-0 right-0 '>
     <div className='absolute right-5 z-20 block top-4 bar md:hidden' onClick={toggleNavbar}>
         <i className="fa-solid fa-bars text-white text-[20px] " ></i>
     </div>
-    <Link to='/' className='bg-white w-[20%] h-full'>
+    <Link to='/' className='bg-white w-[20%] h-full logo'>
         <img src={logo} className="w-[30%] mt-[3.5%] md:mt-0 absolute md:top-[25%] xl:top-[19%] z-20 md:w-[20%] lg:w-[16%] ml-[3.5%] logo 2xl:w-[10%]"  />
     </Link>
     <div className={sidebar ? 'nav active' : 'nav'}>

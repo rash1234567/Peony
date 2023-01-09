@@ -28,7 +28,7 @@
 }
 @media(min-width: 1024px){
     .container{
-        height: 50vh;
+        height: 700px;
         margin-top: 0;
     }
     .overlay{
@@ -56,4 +56,38 @@
     .container{
         margin-top: 5vh;
     }
+}
+
+@media screen and (orientation:landscape) and (max-width: 900px){
+    .break{
+        display: none;
+    }
+    .container{
+        height:400px;
+    }
+    .textCont{
+        height: 250px;
+        width: 60vw;
+    }
+    .heroHead{
+        font-size: 18px;
+        line-height: 24px;
+        width: 100%;
+    }
+    .heroText{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .btns{
+        width: 70%;
+    }
+    .gsBtn{
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .wvBtn{
+        font-size: 16px;
+    }
+   
 }

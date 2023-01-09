@@ -21,10 +21,10 @@ function Navbar() {
     <div className={sidebar ? 'nav active' : 'nav'}>
         <div className='navbars'>
             <div className="navItemsDiv cursor-pointer" onClick={toggleNavbar}>
-                <Link to='/about' className='navItems 3xl:text-[24px]  4xl:text-[30px]'>About</Link>
-                <p className='navItems 3xl:text-[24px] 4xl:text-[30px]'>Blog</p>
-                <p className='navItems 3xl:text-[24px]  4xl:text-[30px]'>Contact</p>
-                <p className='navItems 3xl:text-[24px]  4xl:text-[30px]'>FAQ</p>
+                <a href='#about' className='navItems 3xl:text-[24px]  4xl:text-[30px]'>About</a>
+                <a href='#blog' className='navItems 3xl:text-[24px] 4xl:text-[30px]'>Blog</a>
+                <a href='#contact' className='navItems 3xl:text-[24px]  4xl:text-[30px]'>Contact</a>
+                <a href='#faq' className='navItems 3xl:text-[24px]  4xl:text-[30px]'>FAQ</a>
             </div>
             <button className='joinUsBtn  4xl:text-[30px]'>Join us</button>
         </div>

@@ -4,7 +4,7 @@ import indexStyles from '../../styles/index.module.css'
 
 function AboutUs() {
   return (
-    <div className={`flex flex-col mt-[20%] mb-[10%] lg:mb-[5%] xl:mt-[20%] xl:mb-[10vh] justify-between h-[650px] md:h-[700px] bg-green-700 lg:h-[600px] xl:h-[100vh] lg:flex-row xl:pr-8 ${indexStyles.AboutUsDiv}`}>
+    <div className={`flex flex-col mt-[20%] mb-[10%] lg:mb-[5%] xl:mt-[20%] xl:mb-[10vh] justify-between h-[650px] md:h-[700px] lg:h-[600px] xl:h-[100vh] lg:flex-row xl:pr-8 ${indexStyles.AboutUsDiv}`}>
         <div className='relative  md:right-[15vh] lg:w-[40%] xl:w-[50%] h-[45%] xl:h-[90%] md:h-[40%] xl:mt-[5%] lg:mt-[10%]'>
             <div className='bg-[#C4F4D7] right-[2vh] lg:-right-[13vh] xl:-right-[15vh] xl:-top-[3vh] absolute h-[256px] w-[240px] xl:w-[40%] xl:h-[40%] 2xl:w-[40%] 2xl:h-[40%] rounded-tr-[10px] rounded-br-[10px]'></div>
             <img src={img} className='absolute bg-white w-4/5 top-[4vh] lg:top-[3vh] xl:top-[4vh] lg:left-[15vh] xl:left-[20vh] right-[5vh] md:w-[400px] lg:w-[350px] xl:w-[85%] x'/>

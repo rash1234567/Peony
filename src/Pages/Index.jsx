@@ -94,23 +94,23 @@ function Index() {
         
         {/* about */}
         <div className={`${indexStyles.aboutContainer} flex flex-col lg:flex-row h-[80vh] lg:h-[500px]  xl:h-[100vh]  4xl:h-[80vh] justify-between md:pr-2 lg:pr-0`} id='about'>
-            <div className={`w-full lg:w-[60%] h-full flex items-center`}>
+            <div className={`w-full lg:w-[60%] h-full flex  items-center`}>
                 <div className={`w-[95%] h-[75%] relative ${indexStyles.aboutimg}`}>
                     <img src={vector} className= {`${indexStyles.vector} w-[100%] h-full `} />
                     <img src={hand} className={`${indexStyles.img} absolute bottom-0 right-0 w-[83%] border-[3px] border-[#04E761] rounded-xl h-[85%]`}/>  
                 </div>  
             </div>
             <div className='xl:w-[39%] lg:w-[45%] lg:h-full xl:h-full flex items-center mb-[8%] lg:mb-0 lg:py-[3%] xl:py-0  '>
-                <div className={`${indexStyles.aboutVadoc}  lg:h-[50%] xl:w-[30.5vw] xl:h-[45%] flex flex-col justify-between lg:pr-4 xl:pr-0 px-[20%] lg:px-0 `}>
-                    <h2 className=' md:text-start font-openSans text-[24px] md:text-[36px] leading-[49px] md:leading-[55px] 3xl:text-[42px] 4xl:text-[48px] 3xl:leading-[55px] 4xl:leading-[60px]  font-[800] underline underline-offset-[30%] decoration-[#04E761] decoration-[2px] '>About Vatdoc</h2>
-                    <p className='font-openSans text-[12px] md:text-[16px] font-[300] leading-[22px] 3xl:text-[28px] 4xl:text-[32px] 3xl:leading-[30px] 4xl:leading-[45px] h-[55%] '>EDMS™ is a document archiving system to be used for storing scanned document and help to track retention policies defined around each documents. Throughout the application, certain features and elements are used. Understanding these features and elements will help you use the software more effectively.</p>
-                    <Link to='/about' className='text-[#04E761] text-[16px] md:text-[18px] font-[600] 3xl:text-[24px] 4xl:text-[28px] 3xl:leading-[26px] 4xl:leading-[30px] leading-[22px] '>Read more</Link>
+                <div className={`${indexStyles.aboutVadoc} lg:h-[50%] xl:w-[30vw] xl:h-[40%]  3xl:h-[55%] flex flex-col justify-between lg:pr-4 xl:pr-0 px-[20%] lg:px-0 `}>
+                    <h2 className={` ${indexStyles.about} md:text-start font-openSans text-[24px] md:text-[36px] leading-[49px] md:leading-[55px] font-[800] underline underline-offset-[30%] decoration-[#04E761] decoration-[2px]`}>About Vatdoc</h2>
+                    <p className={` ${indexStyles.aboutp} font-openSans text-[12px] md:text-[16px] font-[300] leading-[22px] h-[55%] xl:h-[40%] 2xl:h-[50%]`}>EDMS™ is a document archiving system to be used for storing scanned document and help to track retention policies defined around each documents. Throughout the application, certain features and elements are used. Understanding these features and elements will help you use the software more effectively.</p>
+                    <Link to='/about' className={` ${indexStyles.aboutp} text-[#04E761] text-[16px] md:text-[18px] font-[600] leading-[22px]`}>Read more</Link>
                 </div> 
             </div>
         </div>
 
         {/* advantages */}
-        <div className='flex flex-col-reverse lg:flex-row lg:h-[35vh] xl:h-[70vh] landscape:h-[700px] lg:landscape:h-[500px] xl:landscape:h-[70vh] '>
+        <div className={`flex flex-col-reverse lg:flex-row lg:h-[500px] xl:h-[70vh] bg-yellow-500 ${indexStyles.advantages}`}>
             <div className= {`flex h-full py-[5%] ${indexStyles.advantagesContainer}`}>
                 <div className='flex flex-col w-[15%] items-center justify-around'>
                     <div className='w-[10px] h-[10px] md:w-[15px] md:h-[15px] bg-black'></div>
@@ -124,16 +124,15 @@ function Index() {
                     <p className='font-openSans text-[14px] leading-[18px] md:text-[20px] md:leading-[27px] font-[400] md:mt-[2.5%] mt-[3%] 3xl:text-[26px] 4xl:text-[30px] 3xl:leading-[32px] 4xl:leading-[36px]'>VATDOC delivers a sensible and easy to work solution for teams and organizations… </p>
                 </div> 
             </div>
-            <div className='w-full h-[40vh] lg:h-auto lg:w-[60%] landscape:h-[80%] lg:landscape:h-auto' id='desc'></div>
+            <div className={`w-full h-[40vh] lg:h-auto lg:w-[60%] ${indexStyles.advPic}`} id='desc'></div>
         </div>
 
-       
         {/* comment */}
-        <div  className={`h-[40vh] md:h-[30vh] lg:h-[400px] xl:h-[60vh] flex  w-full items-center justify-center mx-auto ${indexStyles.comment} `}>
+        <div  className={`h-[40vh] md:h-[30vh] border-b-[1.5px] border-b-solid border-b-[#04E761] lg:h-[400px] xl:h-[60vh] flex  w-full items-center justify-center mx-auto ${indexStyles.comment} `}>
         <div className={`h-[40vh] md:h-[30vh] lg:h-[400px] xl:h-[60vh] flex w-full items-center justify-center mx-auto ${indexStyles.commentOverlay} `}>
            <div className='flex flex-col lg:w-[55%] h-[80%] md:h-[60%] xl:h-[80%] xl:w-[65%] justify-between px-[1%] '>
                 <div>
-                    <img src={vector5} className='2xl:w-[7%]' />
+                    <img src={vector5} className='2xl:w-[7%]'/>
                 </div>
                 <div className='h-[70%] md:h-[80%] flex flex-col justify-between mx-auto'>
                     <p className='mt-[1%] px-2 self-center italic text-[16px] xl:w-[90%] xl:h-[80%] md:text-[20px] font-[400] md:leading-[27px] xl:leading-[40px] font-openSans 2xl:text-[28px] 2xl:leading-[56px] 3xl:text-[33px] 3xl:leading-[60px] 4xl:text-[43px] 4xl:leading-[80px] 5xl:text-[48px] 5xl:leading-[90px]'>
@@ -164,14 +163,15 @@ function Index() {
 
         {/* Patner */}
         <div className='bg-[#C4F4D7] h-[20vh] lg:h-[100px] xl:h-[30vh] relative flex items-center justify-center landscape:h-[150px] ' >
-            <div className='h-[50%] w-[95%] md:w-[50%] xl:w-[40%] 2xl:w-[50%]  flex flex-col lg:flex-row items-center justify-around  landscape:flex-row landscape:justify-around landscape:w-[60%] lg:landscape:w-[50%] '>
-                 <h1 className='text-[#142C14] w-[70%] text-[16px] md:text-[24px] font-openSans font-semibold 2xl:text-[30px] 3xl:text-[40px] 4xl:text-[50px] landscape:text-[20px] lg:landscape:text-[30px]'>Want to become our partner?</h1>
-                 <button className='bg-[#04E761] w-[25%] text-white py-[2%] text-[14px] md:text-[16px] 2xl:text-[20px] font-openSans rounded-[5px] 3xl:text-[24px] 4xl:text-[28px]'>Contact Us</button>
+            {/* <div className='h-[50%] w-[95%] md:w-[50%] bg-green-400 2xl:w-[20vw]  flex flex-col lg:flex-row items-center justify-around  landscape:flex-row landscape:justify-around landscape:w-[60%] lg:landscape:w-[50%] '> */}
+            <div className=' h-[50%] w-full lg:w-[60%] xl:w-[40%] flex flex-col lg:flex-row items-center justify-around lg:justify-start text-center lg:ml-[10%]'>
+                 <h1 className={` ${indexStyles.patnertext} text-[#142C14] w-[70%] text-[16px] md:text-[24px] font-openSans font-semibold 2xl:text-[30px]  landscape:text-[20px] lg:landscape:text-[30px]`}>Want to become our partner?</h1>
+                 <button className='bg-[#04E761] w-[25%] z-[15] md:w-[20%] lg:w-[25%] text-white py-[1%] 3xl:py-[2%] text-[14px] md:text-[16px] 2xl:text-[20px] font-openSans rounded-[5px] 3xl:text-[24px] 4xl:text-[28px] hover:bg-[#1FBE54]'>Contact Us</button>
             </div>
-            <img src={conEllipse}  className='absolute top-0 -z-10 left-[10%]'/>
-            <img src={conEllipse} className='absolute top-0 -z-10 right-[10%]' />
-            <img src={conEllipse2} className='absolute bottom-0 -z-10 right-[10%]' />
-            <img src={conEllipse2} className='absolute bottom-0 -z-10 right-[50%]' />
+            <img src={conEllipse}  className='absolute top-0 z-10 left-[10%]'/>
+            <img src={conEllipse} className='absolute top-0 z-10 right-[25%]' />
+            <img src={conEllipse2} className='absolute -bottom-0 z-10 right-[5%]' />
+            <img src={conEllipse2} className='absolute bottom-0 z-10 right-[50%]' />
         </div>
     </div>
   )

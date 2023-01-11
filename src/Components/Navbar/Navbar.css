@@ -30,6 +30,14 @@
   color: #fff;
   font-family: 'Open Sans', "sans serif";
 }
+.navItemsDiv2{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Open Sans', "sans serif";
+}
 
 .navItems:hover{
   --tw-text-opacity: 1;
@@ -49,6 +57,20 @@
   font-weight: 700;
 }
 .joinUsBtn:hover{
+  background-color: #1FBE54;
+}
+.joinUsBtn2{
+  --tw-bg-opacity: 1;
+  background-color: rgb(81 221 17 / var(--tw-bg-opacity));
+  height: 40px;
+  width: 119px;
+  border-radius: 5px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  font-size: 16px;
+  font-weight: 700;
+}
+.joinUsBtn2:hover{
   background-color: #1FBE54;
 }
 
@@ -82,7 +104,7 @@
     height: 60%;
   }
 
-  .navItemsDiv{
+  /* .navItemsDiv{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,9 +114,9 @@
     font-weight: 700;
     height: 70%;
     margin-right: 50%;
-  }
+  } */
 
-  .joinUsBtn{
+  .joinUsBtn2{
     width: 100px;
     margin-right: 50%;
 
@@ -102,7 +124,7 @@
 }
 
 @media screen and (min-width:1536px){
-  .joinUsBtn{
+  .joinUsBtn2{
     font-size: 24px;
     width: 150px;
     height: 50px;
@@ -112,7 +134,7 @@
   .navItemsDiv{
     font-size: 28px;
   }
-  .joinUsBtn{
+  .joinUsBtn2{
     font-size: 28px;
     width: 150px;
     height: 50px;
@@ -148,7 +170,7 @@
     font-size: 13px;
   }
 
-  .joinUsBtn{
+  .joinUsBtn2{
     height: 30px;
     width: 75px;
     font-size: 13px;

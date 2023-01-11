@@ -28,6 +28,25 @@
 
 }
 
+@media screen and (min-width:1800px) {
+   
+     .patnertext{
+      font-size: calc(24px + 0.8vw);
+     }
+     .aboutVadoc{
+      height: 45%;
+     }
+     .about{
+      font-size: calc(36px + 0.8vw);
+     }
+     .aboutp{
+      font-size: calc(16px + 0.5vw);
+      line-height: calc(22px + 1.5vh);
+     }
+     
+
+}
+
 @media screen and (orientation:landscape) and (max-width: 900px) {
    .features{
       height:auto;
@@ -46,9 +65,15 @@
    }
    .img{
       width: 60%;
-      right: 20%;
+      right: 25%;
    }
    .comment, .commentOverlay{
       height: 300px
+   }
+   .advantages{
+      height: 700px;
+   }
+   .advPic{
+      height: 80%;
    }
 } 

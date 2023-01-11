@@ -31,7 +31,7 @@
 @media screen and (min-width:1800px) {
    
      .patnertext{
-      font-size: calc(24px + 0.8vw);
+      font-size: calc(24px + 0.5vw);
      }
      .aboutVadoc{
       height: 45%;
@@ -48,6 +48,10 @@
 }
 
 @media screen and (orientation:landscape) and (max-width: 900px) {
+   .AboutUsDiv{
+      height:800px;
+      margin-bottom: 100px;
+   }
    .features{
       height:auto;
    }

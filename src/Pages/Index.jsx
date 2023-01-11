@@ -135,8 +135,8 @@ function Index() {
                     <img src={vector5} className='2xl:w-[7%]'/>
                 </div>
                 <div className='h-[70%] md:h-[80%] flex flex-col justify-between mx-auto'>
-                    <p className='mt-[1%] px-2 self-center italic text-[16px] xl:w-[90%] xl:h-[80%] md:text-[20px] font-[400] md:leading-[27px] xl:leading-[40px] font-openSans 2xl:text-[28px] 2xl:leading-[56px] 3xl:text-[33px] 3xl:leading-[60px] 4xl:text-[43px] 4xl:leading-[80px] 5xl:text-[48px] 5xl:leading-[90px]'>
-                        With VatDoc we have been able to manage all our workflow with regards to <br /> documents, most especially the archiving of documents that could <br /> ordinarily be lost if paper-archived. 
+                    <p className=' mt-[1%] px-2 self-center italic text-[16px] md:w-[80%] xl:w-[70%] xl:h-[80%] md:text-[20px] font-[400] md:leading-[27px] xl:leading-[40px] font-openSans 2xl:text-[28px] 2xl:leading-[56px] 3xl:text-[33px] 3xl:leading-[60px] 4xl:text-[43px] 4xl:leading-[80px] 5xl:text-[48px] 5xl:leading-[90px]'>
+                        With VatDoc we have been able to manage all our workflow with regards to documents, most especially the archiving of documents that could ordinarily be lost if paper-archived. 
                     </p>
                     <p className='text-[#1FBE54] mt-[3%] text-center font-openSans font-[700] text-[20px] leading-[27px] 2xl:text-[28px] 2xl:leading-[56px] 3xl:text-[26px] 3xl:leading-[60px] 4xl:text-[36px] 4xl:leading-[70px] xl:h-[20%]  5xl:text-[40px] 5xl:leading-[80px]'>- Sunny Ikegbulam </p>
                 </div>
@@ -147,7 +147,7 @@ function Index() {
         </div>
 
         {/* blog */}
-        <div className=' flex flex-col items-center justify-around mt-8'  id='blog'>
+        <div className=' flex flex-col items-center justify-around mt-[10vh]'  id='blog'>
             <div className='flex flex-col items-center justify-center '>
                 <h3 className='text-[20px] font-[700] font-OpenSans leading-[30px]'>Blog</h3>
                 <h2 className='text-[28px] md:text-[36px] font-[700] font-OpenSans leading-[50px]'>Get to know <span className='text-[#1FBE54]'>our news</span> </h2>

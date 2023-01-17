@@ -26,13 +26,13 @@ function SmalNav() {
       <div className={sidebar ? 'nav active' : 'nav'}>
           <div className='navbars'>
               <div className="navItemsDiv cursor-pointer" onClick={toggleNavbar}>
-                  <a className='navItems'>Home</a>
-                  <a className='navItems'>Scarves</a>
-                  <a className='navItems'>Accesories</a>
-                  <a className='navItems'>Customized items</a>
-                  <a className='navItems'>Blog</a>
-                  <a className='navItems'>About</a>
-                  <a className='navItems'>Contact</a>
+                  <Link to='/' className='navItems'>Home</Link>
+                  <Link to='' className='navItems'>Scarves</Link>
+                  <Link to='' className='navItems'>Accesories</Link>
+                  <Link to='' className='navItems'>Customized items</Link>
+                  <Link to='/blog' className='navItems'>Blog</Link>
+                  <Link to='/About' className='navItems'>About</Link>
+                  <Link to='/contact' className='navItems'>Contact</Link>
               </div>
           </div>
       </div>

@@ -6,9 +6,115 @@
     margin: 0;
     padding: 0;
 }
-#desc{
-    background: url(./assets/focused-workaholic-african-american-businesswoman-working-company-financial-charts-presentation\ 1.png);
-    background-repeat:no-repeat;
-    background-size:cover; 
-    background-position:center;
+
+.navlink{
+    transform-origin:  translate(-50%, -50%);
+    transition: all .5s ease-in-out;
+    text-decoration: underline;
+    text-decoration-color: transparent ;
+    text-decoration-thickness: 3px ;
+    text-underline-offset: 5px;
+
 }
+.navlink:hover{
+    text-decoration-color: #800000;
+    -webkit-text-decoration-color: #800000;
+    -moz-text-decoration-color: #800000;
+    color: #800000;
+}
+
+.scarf-explore{
+  background: url('./assets/IMG-20230115-WA0033.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all .1s ease-in-out;
+}
+.explore{
+  transition: all .1s ease-in-out;
+}
+
+.contactImgDiv:hover > .contactImg{
+  width: 100%;
+  height: 100%;
+}
+.contactImgDiv:hover > div {
+  display: flex;
+}
+.contactImg{
+  transition: all .1s ease-in-out;
+}
+.contact-overlay{
+  background: black;
+  opacity: 0.7;
+}
+
+@media screen and (orientation:landscape) and (max-width:900px){
+    .contact{
+      margin-top: 3vh;
+    }
+    .smallNav, .smcover{
+      display: none;
+    }
+    .largenav {
+      display: block;
+    }
+    .n-more{
+      text-align:center;
+    }
+    .logo{
+      margin-top: 8vh;
+    }
+
+}
+
+@media screen and (max-width:769px){
+    .nav {
+      background-color: whitesmoke;
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      transition: 850ms;
+    }
+    
+    .nav.active {
+      left: 0;
+      transition: 350ms;
+      z-index: 15;
+      width: 100%;
+    }
+  
+    .navbars{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+    }
+  
+    .navItemsDiv{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 700;
+      height: 80%;
+      margin: 0 auto;
+    }
+    .navItems{
+        border-bottom: 1px solid #666;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        color: #666;
+    }
+  
+  }

@@ -1,21 +1,25 @@
 import './App.css';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
-import Index from './Pages/Index';
-import About from './Pages/about'
-import Navbar from './Components/Navbar/Navbar';
-import FooterOne from './Components/FooterOne';
+import Index from './Pages/index';
+import LargeNav from './Component/LargeNav';
+import SmalNav from './Component/SmalNav';
+import Contact from './Pages/Contact';
+import About from './Pages/About'
+import Footer from './Component/Footer';
 
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar/>
+        <LargeNav/>
+        <SmalNav/>
         <Routes>
           <Route path='/' element={<Index/>}/>
-          <Route path='/about' element={<About/>}/> 
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/about' element={<About/>}/>
         </Routes>
-        <FooterOne/>
+        <Footer/>
       </Router>
     </>
   );

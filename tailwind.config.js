@@ -8,7 +8,9 @@ module.exports = {
       'openSans' : ['"Open Sans"'],
       'inter':['Inter'],
       'poppins':['Poppins'],
-      'roboto':['Roboto']
+      'roboto':['Roboto'],
+      'greatVibes': ['"Great Vibes"', 'cursive'],
+      'nunitoSans': ['"Nunito Sans"', 'cursive'],
     },
     extend: {
       screens: {

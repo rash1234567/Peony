@@ -4,7 +4,7 @@ import Index from './Pages/Index';
 import LargeNav from './Component/LargeNav';
 import SmalNav from './Component/SmalNav';
 import Contact from './Pages/Contact';
-import About from './Pages/About'
+import AboutMe from './Pages/AboutMe'
 import Scarves from './Pages/Scarves'
 import Accesories from './Pages/Accesories'
 import Blog from './Pages/Blog'
@@ -25,7 +25,7 @@ function App() {
           {/* <Route path='/' element={<Customized/>}/> */}
           <Route path='/Blog' element={<Blog/>}/>
           <Route path='/Contact' element={<Contact/>}/>
-          <Route path='/About' element={<About/>}/>
+          <Route path='/About' element={<AboutMe/>}/>
         </Routes>
         <Footer/>
       </Router>

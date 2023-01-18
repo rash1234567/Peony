@@ -10,6 +10,7 @@ import Accesories from './Pages/Accesories'
 import Blog from './Pages/Blog'
 // import Customized from './Pages/Customized'
 import Footer from './Component/Footer';
+import Modal from './Component/Modal';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Router>
         <LargeNav/>
         <SmalNav/>
+        <Modal/>
         <Routes>
           <Route path='/' element={<Index/>}/>
           <Route path='/Scarves' element={<Scarves/>}/>

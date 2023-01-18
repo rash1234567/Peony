@@ -20,12 +20,12 @@ function App() {
         <SmalNav/>
         <Routes>
           <Route path='/' element={<Index/>}/>
-          <Route path='/scarves' element={<Scarves/>}/>
+          <Route path='/Scarves' element={<Scarves/>}/>
           <Route path='/Accesories' element={<Accesories/>}/>
           {/* <Route path='/' element={<Customized/>}/> */}
-          <Route path='/blog' element={<Blog/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-          <Route path='/about' element={<About/>}/>
+          <Route path='/Blog' element={<Blog/>}/>
+          <Route path='/Contact' element={<Contact/>}/>
+          <Route path='/About' element={<About/>}/>
         </Routes>
         <Footer/>
       </Router>
